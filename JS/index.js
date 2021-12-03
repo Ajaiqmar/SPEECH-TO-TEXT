@@ -1,7 +1,7 @@
 function interpret()
 {
   const commands = {"Hey DAD":function(){},"Hey siri":function(){},"Hey alexa":function(){},"Hey google":function(){},
-  "Fuck you":function(){},"bunny":function(){},"Describe dinesh":function(){},"Describe devi prasad":function(){},"Describe ajay":function(){}};
+                    "bunny":function(){},"Describe dinesh":function(){},"Describe deviprasad":function(){},"Describe ajay":function(){}};
 
   annyang.addCallback('resultMatch', function(userSaid, commandText, phrases){
     if(commandText === "Hey DAD")
@@ -14,18 +14,13 @@ function interpret()
       const speech = new SpeechSynthesisUtterance("My name is DAD. You idiotic piece of shit.");
       window.speechSynthesis.speak(speech);
     }
-    else if(commandText === "Fuck you")
-    {
-      const speech = new SpeechSynthesisUtterance("Fuck me! Fuck you! You idiotic piece of shit.")
-      window.speechSynthesis.speak(speech);
-    }
     else if(commandText === "Describe dinesh")
     {
       const speech = new SpeechSynthesisUtterance("Nah! Waste of time. See for yourself.");
       window.speechSynthesis.speak(speech);
       location.href = "https://cdn.mos.cms.futurecdn.net/6h8C6ygTdR2jyyUxkALwsc-970-80.jpg.webp";
     }
-    else if(commandText === "Describe devi prasad")
+    else if(commandText === "Describe deviprasad")
     {
       const speech = new SpeechSynthesisUtterance("You know what, I got the right one for it.");
       window.speechSynthesis.speak(speech);
