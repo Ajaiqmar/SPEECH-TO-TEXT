@@ -1,10 +1,10 @@
 function interpret()
 {
-  const commands = {"Hey DAD":function(){},"Hey siri":function(){},"Hey alexa":function(){},"Hey google":function(){},
+  const commands = {"Hey dad":function(){},"Hey siri":function(){},"Hey alexa":function(){},"Hey google":function(){},
                     "bunny":function(){},"Describe dinesh":function(){},"Describe deviprasad":function(){},"Describe ajay":function(){}};
 
   annyang.addCallback('resultMatch', function(userSaid, commandText, phrases){
-    if(commandText === "Hey DAD")
+    if(commandText === "Hey dad")
     {
       const speech = new SpeechSynthesisUtterance("Welcome Home, Boss");
       window.speechSynthesis.speak(speech);
