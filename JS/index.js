@@ -16,6 +16,7 @@ function interpret()
     else if(commandText === "open yahoo")
     {
       window.open("https://in.search.yahoo.com/?fr2=inr");
+      annyang.abort();
     }
     else if(commandText === "open youtube")
     {
