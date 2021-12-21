@@ -11,15 +11,15 @@ function interpret()
     }
     else if(commandText === "open google")
     {
-      window.open("https://www.google.com/","_blank");
+      window.open("https://www.google.com/");
     }
     else if(commandText === "open yahoo")
     {
-      window.open("https://in.search.yahoo.com/?fr2=inr","_blank");
+      window.open("https://in.search.yahoo.com/?fr2=inr");
     }
     else if(commandText === "open youtube")
     {
-      window.open("https://www.youtube.com/","_blank");
+      window.open("https://www.youtube.com/");
     }
     else if(commandText === "Describe dinesh")
     {
