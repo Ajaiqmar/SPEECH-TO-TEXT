@@ -1,6 +1,6 @@
 function interpret()
 {
-  const commands = {"Hey dad":function(){},"Hey siri":function(){},"Hey alexa":function(){},"Hey google":function(){},
+  const commands = {"Hey dad":function(){},"open yahoo":function(){},"open youtube":function(){},"open google":function(){},
                     "bunny":function(){},"Describe dinesh":function(){},"Describe deviprasad":function(){},"Describe ajay":function(){}};
 
   annyang.addCallback('resultMatch', function(userSaid, commandText, phrases){
@@ -9,10 +9,17 @@ function interpret()
       const speech = new SpeechSynthesisUtterance("Welcome Home, Boss");
       window.speechSynthesis.speak(speech);
     }
-    else if(commandText === "Hey siri" || commandText === "Hey alexa" || commandText === "Hey google")
+    else if(commandText === "open google")
     {
-      const speech = new SpeechSynthesisUtterance("My name is DAD. You idiotic piece of shit.");
-      window.speechSynthesis.speak(speech);
+      window.open("https://www.google.com/","_blank");
+    }
+    else if(commandText === "open yahoo")
+    {
+      window.open("https://in.search.yahoo.com/?fr2=inr","_blank");
+    }
+    else if(commandText === "open youtube")
+    {
+      window.open("https://www.youtube.com/","_blank");
     }
     else if(commandText === "Describe dinesh")
     {
